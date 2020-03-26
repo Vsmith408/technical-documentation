@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Flexbox is the new way to style your all elements. It can help with
+          everything from aligning elements, to distributing space between items
+          in a container. This is especially helpful when you don't know the
+          size of the element. Flexbox is normally used on small-scale layouts,
+          compared to the grid system which is used on large-scale layouts.
+        </p>
+      </section>
+      <section id="how_to_get_started" class="main-section">
+        <header>How To Get Started</header>
+        <p>
+          You begin by going into your CSS file and typing in the parent element
+          you want to call. Once you do this, you will set the element to "
+          <strong> display: flex;</strong> ". It's that simple! You can then
+          define what properties you want to add to the element. You have now
+          made that item a flex-container. The parent element is known as the
+          <em>flex-container</em>, meaning that is the element you have set to
+          flex. The children in this element are now known as
+          <em>flex-items</em>
+        </p>
+      </section>
+      <section id="parent_properties" class="main-section">
+        <header>Parent Properties</header>
+        <p>
+          Below are the different types of properties you can use on a parent
+          element, along with a brief description
+        </p>
+        <ol>
+          <li>Display : This property allows you to set a flex container</li>
+          <li>
+            Flex-Direction: There are four directions you can use with this
+            property.
+            <ul>
+              <li>
+                row: this aligns your items from left to right
+              </li>
+              <li>row-reverse : this aligns your items from right to left</li>
+              <li>column: aligns your items from top to bottom</li>
+              <li>column-reverse: aligns your items from bottom to top</li>
+            </ul>
+          </li>
+          <li>
+            Flex- Wrap: This allows you to determine where you want your text to
+            go to the next line. This has three ways to do this:
+            <ul>
+              <li>nowrap: all items will be on one line</li>
+              <li>wrap: items will wrap from top to bottom</li>
+              <li>
+                wrap-reverse: items will wrap onto a new lne from bottom to top
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section id="child_properties" class="main-section">
+        <header>Child Properties</header>
+      </section>
+      <section id="reference" class="main-section">
+        <header>Reference</header>
+        <p>
+          This information was provided by
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            >CSS Tricks</a
+          >
+        </p>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

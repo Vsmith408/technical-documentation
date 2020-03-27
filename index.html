@@ -9,14 +9,14 @@
   <body>
     <nav id="navbar">
       <header>Flexbox</header>
-      <a class="nav-link" href="introduction">Introduction</a>
-      <a class="nav-link" href="how_to_get_started">How To Get Started</a>
-      <a class="nav-link" href="parent_properties">Parent Properties</a>
-      <a class="nav-link" href="child_properties">Child Properties</a>
-      <a class="nav-link" href="reference"> Reference</a>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#how_to_get_started">How To Get Started</a>
+      <a class="nav-link" href="#parent_properties">Parent Properties</a>
+      <a class="nav-link" href="#child_properties">Child Properties</a>
+      <a class="nav-link" href="#reference"> Reference</a>
     </nav>
     <main id="main-doc">
-      <section id="Introduction" class="main-section">
+      <section id="introduction" class="main-section">
         <header>Introduction</header>
         <p>
           Flexbox is the new way to style your all elements. It can help with
@@ -36,14 +36,14 @@
           made that item a flex-container. The parent element is known as the
           <em>flex-container</em>, meaning that is the element you have set to
           flex. The children in this element are now known as
-          <em>flex-items</em>
+          <em>flex-items</em>.
         </p>
       </section>
       <section id="parent_properties" class="main-section">
         <header>Parent Properties</header>
         <p>
           Below are the different types of properties you can use on a parent
-          element, along with a brief description
+          element, along with a brief description.
         </p>
         <ol>
           <li>Display : This property allows you to set a flex container</li>
@@ -58,6 +58,17 @@
               <li>column: aligns your items from top to bottom</li>
               <li>column-reverse: aligns your items from bottom to top</li>
             </ul>
+            <p>
+              When you're typing this in your CSS document, it will look like
+              this:
+            </p>
+            <pre>
+            <code>
+              .container {
+                 flex-direction: row || row-reverse || column || column-reverse ;
+              }
+            </code>
+            </pre>
           </li>
           <li>
             Flex- Wrap: This allows you to determine where you want your text to
@@ -69,11 +80,88 @@
                 wrap-reverse: items will wrap onto a new lne from bottom to top
               </li>
             </ul>
+            <p>
+              When you're typing this in your CSS document, it will look like
+              this:
+            </p>
+            <pre>
+              <code>
+                .container {
+                   flex-wrap: nowrap || wrap || wrap-reverse;
+                }
+              </code>
+              </pre>
           </li>
         </ol>
       </section>
       <section id="child_properties" class="main-section">
         <header>Child Properties</header>
+        <p>
+          Below are the different types of properties you can use on a child
+          element, along with a brief description.
+        </p>
+        <ol>
+          <li>
+            Flex-grow: This property takes a unitless value and determines what
+            portion of the space in the container it should take up. You can
+            enter whatever number you'd like; however, negative numbers are not
+            accepted.
+            <p>
+              When you're typing this in your CSS document, it will look like
+              this:
+            </p>
+            <pre>
+              <code>
+                .item {
+                  flex-grow: (number);
+                }
+              </code>
+            </pre>
+          </li>
+          <li>
+            Flex-shrink: This allows the item to shrink as necessary.
+            <p>
+              When you're typing this in your CSS document, it will look like
+              this:
+            </p>
+            <pre>
+              <code>
+                .item {
+                  flex-shrink: (number);
+                }
+              </code>
+            </pre>
+          </li>
+          <li>
+            Flex-basis: This determines the default size of the item. You can
+            use a number or a keyword.
+            <p>
+              When using this in your CSS document, it will look like this:
+            </p>
+            <pre>
+              <code>
+                .item {
+                  flex-basis: length || keyword(auto);
+                }
+              </code>
+            </pre>
+          </li>
+          <li>
+            Flex: This allows you to shorthand your Flexbox properties. It is
+            recommended to use the shorthand version. However, the flex-shrink
+            and flex-basis properties are not required.
+            <p>
+              When using this in your CSS document, it will look like this:
+            </p>
+            <pre>
+              <code>
+                .item {
+                 flex: [ <'flex-grow'> <'flex-shrink'> || <'flex-basis'> ]
+                }
+              </code>
+            </pre>
+          </li>
+        </ol>
       </section>
       <section id="reference" class="main-section">
         <header>Reference</header>

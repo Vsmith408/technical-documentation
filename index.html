@@ -9,11 +9,13 @@
   <body>
     <nav id="navbar">
       <header>Flexbox</header>
-      <a class="nav-link" href="#introduction">Introduction</a>
-      <a class="nav-link" href="#how_to_get_started">How To Get Started</a>
-      <a class="nav-link" href="#parent_properties">Parent Properties</a>
-      <a class="nav-link" href="#child_properties">Child Properties</a>
-      <a class="nav-link" href="#reference"> Reference</a>
+      <div>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#how_to_get_started">How To Get Started</a>
+        <a class="nav-link" href="#parent_properties">Parent Properties</a>
+        <a class="nav-link" href="#child_properties">Child Properties</a>
+        <a class="nav-link" href="#reference"> Reference</a>
+      </div>
     </nav>
     <main id="main-doc">
       <section id="introduction" class="main-section">
@@ -48,7 +50,7 @@
         <ol>
           <li>Display : This property allows you to set a flex container</li>
           <li>
-            Flex-Direction: There are four directions you can use with this
+            Flex-direction: There are four directions you can use with this
             property.
             <ul>
               <li>
@@ -64,14 +66,14 @@
             </p>
             <pre>
             <code>
-              .container {
-                 flex-direction: row || row-reverse || column || column-reverse ;
-              }
+.container {
+    flex-direction: row || row-reverse || column || column-reverse;
+}
             </code>
             </pre>
           </li>
           <li>
-            Flex- Wrap: This allows you to determine where you want your text to
+            Flex-wrap: This allows you to determine where you want your text to
             go to the next line. This has three ways to do this:
             <ul>
               <li>nowrap: all items will be on one line</li>
@@ -86,9 +88,9 @@
             </p>
             <pre>
               <code>
-                .container {
-                   flex-wrap: nowrap || wrap || wrap-reverse;
-                }
+.container {
+    flex-wrap: nowrap || wrap || wrap-reverse;
+}
               </code>
               </pre>
           </li>
@@ -112,9 +114,9 @@
             </p>
             <pre>
               <code>
-                .item {
-                  flex-grow: (number);
-                }
+.item {
+  flex-grow: (number);
+}
               </code>
             </pre>
           </li>
@@ -126,9 +128,9 @@
             </p>
             <pre>
               <code>
-                .item {
-                  flex-shrink: (number);
-                }
+.item {
+  flex-shrink: (number);
+}
               </code>
             </pre>
           </li>
@@ -140,9 +142,9 @@
             </p>
             <pre>
               <code>
-                .item {
-                  flex-basis: length || keyword(auto);
-                }
+.item {
+  flex-basis: length || keyword(auto);
+}
               </code>
             </pre>
           </li>
@@ -153,13 +155,15 @@
             <p>
               When using this in your CSS document, it will look like this:
             </p>
-            <pre>
+            <left>
               <code>
-                .item {
-                 flex: [ <'flex-grow'> <'flex-shrink'> || <'flex-basis'> ]
-                }
+                <pre>
+.item {
+  flex: [ <'flex-grow'> <'flex-shrink'> || <'flex-basis'> ]
+}
+                </pre>
               </code>
-            </pre>
+            </left>
           </li>
         </ol>
       </section>
